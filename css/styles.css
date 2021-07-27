@@ -234,6 +234,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--size-20);
+  margin-bottom: var(--size-150);
 }
 
 .card {
@@ -277,4 +278,42 @@ transform: scale(1.1);
   font-size: 14px;
   letter-spacing: 0.2px;
   cursor: pointer;
+}
+
+.button-banner-div {
+  background-color: whitesmoke;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.button-banner-div h2 {
+  font-size: var(--size-30);
+  letter-spacing: 0.2px;
+  font-weight: 300px;
+  color: var(--header-text);
+}
+
+.text-container {
+  align-self: center;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.text-container .btn-main {
+  padding: 16px 32px;
+  font: 18px;
+  font-weight: 400;
+}
+
+.text-container .btn-main i {
+  margin-left: 5px;
+}
+
+.image-div {
+  align-self: flex-end;
+}
+
+.image-div img {
+  box-shadow: -5px -5px 5px -5px rgba(48, 63, 100, 0.15);
 }
