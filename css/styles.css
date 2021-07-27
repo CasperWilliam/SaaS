@@ -149,7 +149,13 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 5px 10px rgb(48 63 100 / 10%);
+ /* animation: topToBottom ease-in 2s; */
 }
+
+ /* @keyframes topToBottom {
+  from {bottom: -30px}
+  to {top: 0;}
+} */
 
 
 .google-logo {
@@ -204,4 +210,71 @@ body {
   width: 100px;
   left: 595px;
   top: -110px;
+}
+
+.key-benefits {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.key-benefits h1 {
+  font-size: var(--size-40);
+  color: var(--header-text);
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.key-benefits p {
+  color: var(--text-color);
+  font-size: var(--size-18);
+}
+
+.four-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--size-20);
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(48, 63, 100, 0.15);
+  background: white;
+  border-radius: 8px;
+  padding: 15px 25px; 
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+transform: scale(1.1);
+}
+
+.card h4, p {
+  margin: 10px 0;
+  font-size: var(--size-14);
+}
+
+.card .lm-btn {
+  padding-left: 0;
+}
+
+.card-content span i {
+  color: var(--button);
+}
+
+.flex-header {
+  display: flex;
+}
+
+.btn-sketch {
+  background-color: #5acaa7;
+  color: var(--white);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: -20px 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
 }
