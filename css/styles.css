@@ -545,3 +545,173 @@ p {
 .price-card-grid .card-lg .para-small {
   font-size: var(--size-14);
 }
+
+.card-sm {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+
+.background-section {
+  background-image: url(../Saas-assets/mockup/micah-boswell-OPnBJ5L2oxs-unsplash.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+.lead-capture-container {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.lead-capture-split {
+  align-self: center;
+}
+
+.lead-capture-split h1 {
+  color: white;
+  font-size: var(--size-40);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.lead-capture-split p {
+  color: lightgray;
+  font-size: var(--size-20);
+  margin-bottom: var(--size-30);
+}
+
+.lead-capture-split .line-div {
+  margin: var(--size-20) 0;
+  width: 250px;
+  color: darkgray;
+  opacity: 60%;
+  border-radius: 5px;
+}
+
+.lead-capture-split h2 {
+  font-weight: 500;
+}
+
+.lead-capture-split h2,
+h4 {
+  color: var(--white);
+}
+
+.lead-capture-split h4 {
+  margin-bottom: 0;
+}
+
+.lead-capture-split .para-small {
+  color: lightgray;
+  font-weight: 400;
+  font-size: var(--size-14);
+  margin-top: 0;
+  margin-bottom: var(--size-20);
+}
+
+.triple-image-footer {
+  display: flex;
+  align-items: center;
+}
+
+.triple-image-footer img {
+  border-radius: 50%;
+  margin-left: var(--size-14);
+}
+
+.triple-image-footer .large-margin {
+  margin-left: var(--size-30);
+  margin-right: 5px;
+}
+
+.lead-capture-split-form {
+  background-color: white;
+  border-radius: 10px;
+  margin: var(--size-30);
+  max-width: 400px;
+}
+
+.lead-capture-split-form h3 {
+  margin: 30px 30px 10px 30px;
+  font-weight: 300px;
+  margin-bottom: var(--size-30);
+  font-size: var(--size-18);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-grid div input {
+  padding: 10px;
+  font-family: "Open Sans";
+  border: 2px solid;
+  border-color: rgba(232, 234, 242, 0.7);
+  border-radius: 5px;
+  color: #e8eaf3;
+  text-align: left;
+}
+
+.form-grid div select {
+  padding: 10px;
+  font-family: "Open Sans";
+  border: 2px solid;
+  border-color: rgba(232, 234, 242, 0.7);
+  border-radius: 5px;
+  width: 171px;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
+}
+
+.form-grid div textarea {
+  grid-template-columns: 1/3;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.form-grid-2 textarea {
+  font-family: "Open Sans";
+  border: 2px solid;
+  border-color: rgba(232, 234, 242, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--text-color);
+  font-size: var(--size-16);
+}
+
+.radio-div {
+  display: flex;
+  margin: 0 25px;
+}
+
+.radio-div span {
+  text-align: left;
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.form-grid-2 .btn-main {
+  width: 350px;
+  border-radius: 5px;
+  font-size: var(--size-18);
+  margin-bottom: var(--size-40);
+}
