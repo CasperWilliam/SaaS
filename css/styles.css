@@ -593,7 +593,7 @@ p {
 }
 
 .lead-capture-split h2,
-h4 {
+.lead-capture-split h4 {
   color: var(--white);
 }
 
@@ -628,7 +628,8 @@ h4 {
   background-color: white;
   border-radius: 10px;
   margin: var(--size-30);
-  max-width: 400px;
+  max-width: 480px;
+  padding: var(--size-20);
 }
 
 .lead-capture-split-form h3 {
@@ -654,6 +655,8 @@ h4 {
   border-radius: 5px;
   color: #e8eaf3;
   text-align: left;
+  width: 200px;
+  font-size: 16px;
 }
 
 .form-grid div select {
@@ -662,7 +665,7 @@ h4 {
   border: 2px solid;
   border-color: rgba(232, 234, 242, 0.7);
   border-radius: 5px;
-  width: 171px;
+  width: 200px;
 }
 
 .left {
@@ -710,8 +713,60 @@ h4 {
 }
 
 .form-grid-2 .btn-main {
-  width: 350px;
+  width: 420px;
   border-radius: 5px;
   font-size: var(--size-18);
   margin-bottom: var(--size-40);
 }
+
+.footer-container {
+  margin-top: var(--size-100);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: var(--size-10);
+  margin-bottom: var(--size-100);
+}
+
+.front-footer {
+  width: fit-content;
+}
+
+.footer-container .front-footer p {
+  font-size: var(--size-16);
+  margin-top: 0;
+}
+
+.footer-container i {
+margin-right: var(--size-10);
+color: var(--text-color);
+}
+
+.footer-container ul {
+  padding: 0;
+}
+
+.footer-container li {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.footer-container li a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-container .company-footer .btn-sketch {
+background-color: var(--button);
+font-size: 12px;
+border-radius: 4px;
+} 
+
+.support-footer li i  {
+margin-right: var(--size-10);
+width: var(--size-20);
+text-align: center;
+}
+
+
