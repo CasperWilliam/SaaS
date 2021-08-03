@@ -19,49 +19,57 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/fbb29194c2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-   <div class="gradient-div">
-    <!-- Nav Bar -->
-    <section>
-  
+
+    <!-- nav bar -->
+
+    <nav id="topNav" class="navbar" >
       <div class="nav-container container">
         <div class="top-nav">
-          <div class="nav-left">
+          <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+            <span>Top bar <i class="fas fa-chevron-down fa-xs"></i
+            ></span>
+          </button>
             <span class="nav-left-1"
-              ><i class="fas fa-chevron-left fa-xs"></i>Main Demo</span
-            >
-          </div>
-          <div class="nav-right">
+              ><i class="fas fa-chevron-left fa-xs"></i><a href="#">Main Demo</a></span
+              >
             <span class="nav-right-1"
-              >Demos<i class="fas fa-chevron-down fa-xs"></i
-            ></span>
+              ><i class="fas fa-chevron-down fa-xs"></i
+            ><a href="#">Demos</a></span>
             <span class="nav-right-2"
-              >Docs<i class="fas fa-chevron-down fa-xs"></i
-            ></span>
-          </div>
-        </div>
+              ><i class="fas fa-chevron-down fa-xs"></i
+            ><a href="#">Docs</a></span>
         <div class="bottom-nav">
-          <div class="bottom-nav-left">
+          <span class="bottom-nav-left">
             <img
               src="./Saas-assets/icons/logo.svg"
               height="100px"
               width="140px"
               alt=""
             />
-          </div>
-          <div class="bottom-nav-right">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Learn</a>
-            <a href="#">Pricing</a>
-            <a href="#">Hire Us</a>
-            <div class="button-div">
-              <span><button class="btn-main">Buy Now</button></span>
-            </div>
-          </div>
+          </span>
+          <span class="bottom-nav-right navbar-nav">
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdownTwo">
+              <span>&#9776;</span>
+            </button>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Hire Us</a></li>
+            <li><button class="btn-main">Buy Now</button></li>
+          </ul>
+          </span>
         </div>
       </div>
+    </nav>
+  
+    <section>
+  
+    
     </section>
 
     <!-- Empowering Teams Video Section -->
@@ -71,6 +79,10 @@
           <div class="container-1">
             <h1>Empowering <br />teams with the <br />freedom</h1>
             <p>Own the unlimited power of the web <br />devlopment.</p>
+            <div class="two-btn-div container">
+              <span class="play-video-btn"><button class="video-btn"><i class="far fa-play-circle"></i>Play Video</button></span>
+              <span class="learn-more-btn"><button class="lm-btn">Learn More</button><i class="fas fa-chevron-right fa-xs"></i></span>
+            </div>
           </div>
           <div class="container-2" id="bottomToTop">
             <div class="google-logo logos"><img src="./Saas-assets/logo_icons/google.png" height="40px" width="40px" alt="google"></div>
@@ -82,20 +94,23 @@
             <div class="calendar-logo logos"><img src="./Saas-assets/logo_icons/calendar.png" height="40px" width="40px" alt="calendar"></div>
           </div>
         </div>
-        <div class="two-btn-div container">
+        <!-- <div class="two-btn-div container">
           <span class="play-video-btn"><button class="video-btn"><i class="far fa-play-circle"></i>Play Video</button></span>
           <span class="learn-more-btn"><button class="lm-btn">Learn More</button><i class="fas fa-chevron-right fa-xs"></i></span>
-        </div>
-        <div class="key-benefits container">
-          <h1>Key benefits</h1>
-          <p>Design faster with agrowing array of beautiful templates.</p>
-        </div>
+        </div> -->
+        
    </div>
     </section>
 
     <!-- Key Benefits Section -->
 
     <section>
+
+      <div class="key-benefits container">
+        <h1>Key benefits</h1>
+        <p>Design faster with agrowing array of beautiful templates.</p>
+      </div>
+
       <div class="four-card-grid container">
 
         <div class="card">
@@ -163,13 +178,13 @@
           </div>
         </div>
         <div class="image-div">
-          <img src="./Saas-assets/banners/banner_one.jpg" height="400"  width="600" alt="">
+          <img src="./Saas-assets/banners/banner_one.jpg" alt="">
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container-sm">
+      <div class="container">
 
         <div class="why-front-text-container">
           <h1>Why Front?</h1>
@@ -177,45 +192,51 @@
           on the web - it is the starting point for creative sales.</p>
         </div>
 
-         <div class="dot-line-container">
+        <div class="dot-line-container container-lg">
 
-        <div class="dot-line-div">
-          <div class="circle-div">
-            <p>●</p>
-          </div>
-          <div class="line-div"></div>
-        </div>
-
-        <div class="dot-line-div">
-          <div class="circle-div">
-            <p>●</p>
-            <h4></h4>
-          </div>
-          <div class="line-div"></div>
-        </div>
-
-        <div class="dot-line-div">
-          <div class="circle-div">
-            <p>●</p>
-          </div>
-          <div class="line-div"></div>
-        </div>
-
-        <div class="dot-line-div">
-          <div class="circle-div">
-            <p>●</p>
+          <div class="dot-line-div">
+            <div class="circle-div">
+              <p>●</p>
             </div>
-        </div>
-      </div> 
+            <div class="line-div"></div>
+            <h4>Basic Elements</h4>
+          </div>
+  
+          <div class="dot-line-div">
+            <div class="circle-div">
+              <p>●</p>
+            </div>
+            <div class="line-div"></div>
+            <h4>Compoments</h4>
+          </div>
+  
+          <div class="dot-line-div">
+            <div class="circle-div">
+              <p>●</p>
+            </div>
+            <div class="line-div"></div>
+            <h4>Combined Components</h4>
+          </div>
+  
+          <div class="dot-line-div">
+            <div class="circle-div">
+              <p>●</p>
+              </div>
+              <h4>Page Layouts</h4>
+          </div>
+          
+        </div> 
+  
+      <div class="dot-line-text container-lg">
+  
+        <h4 id="one">Basic elements</h4>
+        <h4 id="two">Components</h4>
+        <h4 id="three">Combined components</h4>
+        <h4 id="four">Page layouts</h4>
+       </div>
 
-    <div class="dot-line-text container">
+    </div>
 
-      <h4 id="one">Basic elements</h4>
-      <h4 id="two">Components</h4>
-      <h4 id="three">Combined components</h4>
-      <h4 id="four">Page layouts</h4>
-     </div>
-  </div>
 
     <div class="banner-2-div container-md">
       <i class="fas fa-play-circle fa-3x"></i> 
@@ -231,7 +252,7 @@
       <div class="hubspot-split-div container">
         <div class="hubspot-image">
           <img class="dots" src="./Saas-assets/icons/dots.svg" height="400" width="400" alt="">
-          <img class="person-1" src="./Saas-assets/people/woman_three.jpg" height="550" width="500" alt="">
+          <img class="person-1" src="./Saas-assets/people/woman_three.jpg"  alt="">
 
         </div>
 
@@ -361,7 +382,7 @@
 
         <div class="lead-capture-split-form">
           <form action="">
-          <h3>Fill out the form and we'll be in touch <br>
+          <h3>Fill out the form and we'll be in touch 
           as soon as possible</h3>
 
           <div class="form-grid">
@@ -469,9 +490,24 @@
 
     </div>
 
-    <script
-      src="https://kit.fontawesome.com/fbb29194c2.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <a id="scrollUp" href="#pageTop"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function(event) { 
+
+      var navButton = document.querySelector('button[aria-expanded]');
+
+function toggleNav({ target }) {
+  const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+  navButton.setAttribute('aria-expanded', !expanded);
+}
+
+navButton.addEventListener('click', toggleNav);
+
+});
+    
+    </script>
   </body>
 </html>

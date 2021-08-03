@@ -5,9 +5,13 @@ body {
   border: 0;
 }
 
-.top-nav {
+
+#topNav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.top-nav {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -15,33 +19,79 @@ body {
   padding-top: 10px;
 }
 
-.nav-left i {
-  margin-right: 5px;
-  align-self: center;
+.top-nav button {
+  position: relative;
+  left: 300px;
+  top: -5px;
 }
 
-.nav-left-1 {
-  display: flex;
+.navbar-toggler {
+  display: block;
+  position: absolute;
+  right: var(--size-20);
+  top: var(--size-10);
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+[aria-controls="navbarDropdownTwo"] {
+  display: none;
+}
+
+.navbar-toggler span {
+  color: var(--text-color);
+  font-size: var(--size-20);
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.nav-left-1 i,
+.nav-right-1 i,
+.nav-right-2 i {
+  margin-right: 10px;
+}
+
+.nav-left-1 a,
+.nav-right-1 a,
+.nav-right-2 a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .nav-right-1 {
-  margin-right: 20px;
+  margin-left: 20px;
+  float: right;
+}
+
+.nav-right-2 {
+  float: right;
 }
 
 .nav-right i {
   margin-left: 5px;
 }
 
-.bottom-nav {
-  display: flex;
-  justify-content: space-between;
+.bottom-nav-right {
+float: right;
+ margin-top: 20px;
 }
 
-.bottom-nav-right {
-  display: flex;
+.bottom-nav-right,
+.bottom-nav-right ul li {
+  display: inline;
   align-self: center;
   color: var(--text-color);
   justify-content: space-evenly;
+}
+
+.bottom-nav-right li {
+  list-style: none;
 }
 
 .bottom-nav-right a {
@@ -51,8 +101,10 @@ body {
   align-self: center;
 }
 
-.button-div {
-  display: flex;
+.navbar-nav button {
+  position: relative;
+  left: 20px;
+  margin-top: 20px;
 }
 
 .btn-main {
@@ -75,8 +127,6 @@ body {
 
 .split-container {
   display: flex;
-  max-height: 435px;
-  flex-wrap: wrap;
 }
 
 .container-1 {
@@ -138,6 +188,7 @@ body {
 
 .learn-more-btn i {
   color: var(--button);
+  font-size: var(--size-16);
 }
 
 .logos {
@@ -225,7 +276,7 @@ body {
 .key-benefits {
   margin: 0 auto;
   text-align: center;
-  margin-top: 300px;
+  margin-bottom: var(--size-50);
 }
 
 .key-benefits h1 {
@@ -233,6 +284,7 @@ body {
   color: var(--header-text);
   margin-bottom: 5px;
   letter-spacing: 1px;
+  margin-top: var(--size-150);
 }
 
 .key-benefits p {
@@ -353,13 +405,24 @@ p {
 
 .dot-line-container {
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 800px;
   width: 100%;
 }
 
 .dot-line-div {
   display: flex;
+}
+
+.dot-line-div h4 {
+  display: none;
+}
+
+.dot-line-container {
+  display: inline-flex;
+  justify-content: center;
+  width: 800px;
+  width: 100%;
 }
 
 .circle-div {
@@ -392,6 +455,7 @@ p {
   width: 900px;
   position: relative;
   right: 30px;
+  left: 20px;
   margin-bottom: var(--size-50);
 }
 
@@ -415,6 +479,7 @@ p {
   right: 50px;
 }
 
+
 .banner-2-div {
   margin-bottom: 200px;
 }
@@ -434,14 +499,9 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   column-gap: 100px;
-  max-height: 750px;
-  height: 500px;
-  margin-bottom: var(--size-150);
+  max-height: 700px;
 }
 
-.hubspot-image {
-  height: 400px;
-}
 
 .hubspot-image .dots {
   position: relative;
@@ -451,6 +511,7 @@ p {
 
 .hubspot-image .person-1 {
   position: relative;
+  max-width: 480px;
   bottom: 500px;
   left: 50px;
   border-radius: 5px;
@@ -655,7 +716,7 @@ p {
   border-radius: 5px;
   color: #e8eaf3;
   text-align: left;
-  width: 200px;
+  max-width: 200px;
   font-size: 16px;
 }
 
@@ -665,6 +726,7 @@ p {
   border: 2px solid;
   border-color: rgba(232, 234, 242, 0.7);
   border-radius: 5px;
+  max-width: 200px;
   width: 200px;
 }
 
@@ -699,6 +761,7 @@ p {
   padding: 10px;
   color: var(--text-color);
   font-size: var(--size-16);
+  max-width: 420px;
 }
 
 .radio-div {
@@ -767,6 +830,23 @@ border-radius: 4px;
 margin-right: var(--size-10);
 width: var(--size-20);
 text-align: center;
+}
+
+#scrollUp {
+  background-color: transparent;
+  bottom: var(--size-30);
+  background-image: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
+  color: var(--white);
+  font-size: var(--size-20);
+  height: var(--size-50);
+  width: var(--size-50);
+  line-height: var(--size-50);
+  position: fixed;
+  right: var(--size-30);
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
 }
 
 
